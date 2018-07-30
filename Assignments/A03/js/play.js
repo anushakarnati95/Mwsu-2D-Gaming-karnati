@@ -117,7 +117,7 @@ var play = {
 				let ox = obstacles[i].x;
 
 				//if player is below obstacle and within 5 pixels and choose only one of the pair
-				if (py > oy && Math.abs(py - oy) < 5 && ox < game.width / 2) {
+				if (py > oy && Math.abs(py - oy) < 5 ) {
 					point++;
 					this.sound.score.play('', 0, 0.5, false)
 				}
